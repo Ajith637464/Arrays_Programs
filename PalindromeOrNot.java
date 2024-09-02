@@ -7,9 +7,7 @@ class PalindromeOrNot
 		System.out.println("Enter the Number:");
 		int n=sc.nextInt();
 
-		if ()
-		{
-		}int rev=0;
+		int rev=0;
 		for (int i=n;i>0 ;i/=10)
 		{
 			int rem=i%10;
