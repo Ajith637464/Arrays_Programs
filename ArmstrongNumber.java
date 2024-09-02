@@ -33,15 +33,8 @@ class  ArmStrongNumber
 		System.out.print("Enter the num: ");
 		int n=sc.nextInt();
 
-		/*String res=isArmStrongNumberOrNot(n);
-		System.out.println("The given number "+n+" is  "+res);*/
-		for (int i=1;i<=n ;i++ )
-		{
-			String res=isArmStrongNumberOrNot(i);
-			if (res=="Armstrong number")
-			{
-				System.out.println();
-			}
-		}
+		String res=isArmStrongNumberOrNot(n);
+		System.out.println("The given number "+n+" is  "+res);
+		
 	}
 }
