@@ -1,0 +1,33 @@
+import java.util.*;
+class TechNumber 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static String findTechNumberOrNot(int n)
+	{
+		String num=""+n;
+		int len=num.length();
+		if (len%2 !=0)
+			return "Not a TechNumber";
+		int div=0;
+		for (int i=2;i<=len;i+=2)
+		{
+			div=(div*10)+9;
+		}
+		int n1=n/div;
+		int n2=n%(div+1);
+		int sum=(n1+n2)*(n1+n2);
+		if (sum==n)
+		{
+			return "TechNumber";
+		}
+		return "Not a TechNumber";
+	}
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter the number: ");
+		int n=sc.nextInt();
+
+		String res=findTechNumberOrNot(n);
+		System.out.println("The given number "+n+" is "+res);
+	}
+}
