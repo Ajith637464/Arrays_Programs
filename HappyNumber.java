@@ -35,17 +35,7 @@ class HappyNumber
 		System.out.print("Enter the Number:");
 		int n=sc.nextInt();
 		
-		/*String res=happyNumberOrNot(n);
+		String res=happyNumberOrNot(n);
 		System.out.println("The given number "+n+" is a "+res+" number.");
-		*/
-		for (int i=1;i<n;i++ )
-		{
-			String res=happyNumberOrNot(i);
-			if (res=="Happy")
-			{
-				System.out.println(i);
-			}
-		}
-		
 	}
 }
